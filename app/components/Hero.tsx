@@ -1,22 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Environment, useGLTF } from "@react-three/drei";
 import Image from "next/image";
 import Link from "next/link";
 import { client } from "../lib/sanity";
 
-// Component to load the 3D sneaker model
-// function SneakerModel() {
-//     const { scene } = useGLTF('/models/nike_sneaker.glb', true); // Ensure this path is correct
 
-//     if (!scene) {
-//         return <p>Loading...</p>; // Display loading message until the model is ready
-//     }
-
-//     return <primitive object={scene} scale={0.7} />;
-// }
 
 export default function Hero() {
     const [data, setData] = useState(null);
