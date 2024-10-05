@@ -16,6 +16,7 @@ export default function Hero() {
             const query = "*[_type == 'heroImage'][0]";
             const result = await client.fetch(query);
             setData(result);
+            console.log(data);
         }
 
         fetchData();
